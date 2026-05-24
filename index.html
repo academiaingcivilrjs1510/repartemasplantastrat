@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PTAP Atahualpa – Trabajo Final I Unidad | CIV326</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════
+     HEADER HERO
+     ══════════════════════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-grid-bg"></div>
+  <div class="header-inner">
+    <div>
+      <div class="header-badge">
+        <span class="dot"></span>
+        CIV326 · PLANTAS DE TRATAMIENTO DE AGUAS · I UNIDAD
+      </div>
+      <h1 class="header-title">
+        Trabajo Final – I Unidad:<br>
+        <span>PTAP · Planta de Tratamiento<br>de Agua Potable</span>
+      </h1>
+      <p class="header-subtitle">
+        IOARR – Localidad Atahualpa, Pachiza, Mariscal Cáceres, San Martín &nbsp;|&nbsp;
+        Universidad Nacional del Altiplano · Ingeniería Civil
+      </p>
+      <div class="header-meta">
+        <span class="meta-chip"><span class="icon">📅</span> Entrega: 24 May 2026 – 11:59 PM</span>
+        <span class="meta-chip"><span class="icon">📄</span> Formato: PDF + Editable</span>
+        <span class="meta-chip"><span class="icon">👥</span> 5 Integrantes</span>
+        <span class="meta-chip"><span class="icon">💰</span> S/. 1,080,304.15</span>
+        <span class="meta-chip"><span class="icon">📍</span> Altitud: 335 msnm</span>
+      </div>
+    </div>
+    <div class="header-stats">
+      <div class="stat-box">
+        <span class="stat-val">1,350</span>
+        <span class="stat-label">Beneficiarios</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-val">356</span>
+        <span class="stat-label">Viviendas</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-val">90</span>
+        <span class="stat-label">Días de ejecución</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════════════
+     NAVEGACIÓN PRINCIPAL (TABS)
+     ══════════════════════════════════════════════════════════════ -->
+<nav class="site-nav" aria-label="Secciones del trabajo">
+  <div class="nav-inner">
+    <button class="nav-btn active" data-tab="tab-0" onclick="switchTab('tab-0', this)">
+      <span class="nav-num">0</span> Resumen General
+    </button>
+    <button class="nav-btn" data-tab="tab-1" onclick="switchTab('tab-1', this)">
+      <span class="nav-num">1</span> Jinchuña – Descripción &amp; Parámetros
+    </button>
+    <button class="nav-btn" data-tab="tab-2" onclick="switchTab('tab-2', this)">
+      <span class="nav-num">2</span> Gonzales – Captación &amp; Conducción
+    </button>
+    <button class="nav-btn" data-tab="tab-3" onclick="switchTab('tab-3', this)">
+      <span class="nav-num">3</span> Rojas – Sedimentador
+    </button>
+    <button class="nav-btn" data-tab="tab-4" onclick="switchTab('tab-4', this)">
+      <span class="nav-num">4</span> Quispe – Filtro Lento
+    </button>
+    <button class="nav-btn" data-tab="tab-5" onclick="switchTab('tab-5', this)">
+      <span class="nav-num">5</span> Zaga – Reservorio &amp; Cloración
+    </button>
+    <button class="nav-btn" data-tab="tab-6" onclick="switchTab('tab-6', this)">
+      <span class="nav-num">📋</span> Presupuesto &amp; Metas
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════════
+     CONTENIDO PRINCIPAL
+     ══════════════════════════════════════════════════════════════ -->
+<main class="site-main">
+
+  <!-- ────────────────────────────────────────────────────────────
+       TAB 0 · RESUMEN GENERAL DEL PROYECTO
+       ──────────────────────────────────────────────────────────── -->
+  <section class="tab-panel active" id="tab-0">
+    <h2 class="section-title">Resumen General del Proyecto</h2>
+    <p class="section-lead">
+      IOARR aprobado bajo normatividad INVIERTE.PE — CUI: <strong class="text-accent">2498923</strong> —
+      Gobierno Regional San Martín · Gerencia Territorial Huallaga Central – Juanjuí · Febrero 2022.
+    </p>
+
+    <!-- Antecedentes y contexto -->
+    <div class="card">
+      <div class="sub-title">📌 Antecedentes e Historia del Proyecto</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">07 AGO 2020</div>
+          <div class="tl-title">Oficio N° 123-2020-MDP/A – Solicitud inicial</div>
+          <div class="tl-body">El alcalde de la Municipalidad Distrital de Pachiza solicita apoyo para elaboración del Expediente Técnico IOARR para restablecer el servicio de agua potable del CP Atahualpa.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">2020 – Informe N° 003-2020-EJLC</div>
+          <div class="tl-title">Visita Técnica del Ing. Edson Jhair Lizana Carrasco</div>
+          <div class="tl-body">Se constatan deficiencias graves en la infraestructura existente, con riesgo para la salud de los pobladores (enfermedades diarreicas agudas en niños). Se recomienda intervención IOARR.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">09 SET 2020</div>
+          <div class="tl-title">Convenio de Cooperación Interinstitucional</div>
+          <div class="tl-body">La Municipalidad Distrital de Pachiza y el Gobierno Regional San Martín suscriben convenio (Acuerdo de Concejo N° 012-2020-MDP).</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">20 OCT 2020</div>
+          <div class="tl-title">Registro y aprobación del Formato 07-C</div>
+          <div class="tl-body">La Unidad Formuladora de la DRVCS del Gobierno Regional San Martín registra y aprueba la IOARR bajo la normatividad INVIERTE.PE.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">10 FEB 2022</div>
+          <div class="tl-title">Oficio N° 102-2022-GRSM/GRPYP – Institucionalización</div>
+          <div class="tl-body">La Gerencia Regional de Planeamiento y Presupuesto remite la solicitud de institucionalidad a la GT Huallaga Central – Juanjuí. Se elabora el Expediente Técnico definitivo.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ubicación y acceso -->
+    <div class="two-col">
+      <div class="card">
+        <div class="sub-title">📍 Ubicación Política y Geográfica</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Parámetro</th><th>Valor</th></tr></thead>
+            <tbody>
+              <tr><td>Departamento</td><td>San Martín</td></tr>
+              <tr><td>Provincia</td><td>Mariscal Cáceres</td></tr>
+              <tr><td>Distrito</td><td>Pachiza</td></tr>
+              <tr><td>Localidad</td><td>Atahualpa</td></tr>
+              <tr><td>Datum</td><td>WGS84 – Zona 18M</td></tr>
+              <tr><td>UTM Norte</td><td>9191699</td></tr>
+              <tr><td>UTM Este</td><td>299634</td></tr>
+              <tr><td>Altitud</td><td>335 msnm</td></tr>
+              <tr><td>Ubigeo</td><td>2206040047</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <div class="sub-title">🚗 Vías de Acceso</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Tramo</th><th>Dist. (km)</th><th>Tiempo</th><th>Medio</th></tr></thead>
+            <tbody>
+              <tr><td>Moyobamba → Pachiza</td><td>245</td><td>4h 44min</td><td>Camioneta</td></tr>
+              <tr><td>Pachiza → Atahualpa</td><td>14</td><td>30 min</td><td>Motorizado</td></tr>
+              <tr><td>Pachiza → Atahualpa</td><td>3</td><td>10 min</td><td>Bote/Carro</td></tr>
+              <tr><td><strong>TOTAL</strong></td><td><strong>17</strong></td><td><strong>5h 24min</strong></td><td>–</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-sm" style="font-size:.85rem;color:var(--c-muted);">Vías afirmadas en buen estado. Acceso pluvial a través del río Huayabamba.</p>
+      </div>
+    </div>
+
+    <!-- Imagen mapa de ubicación (web image placeholder con ejemplo) -->
+    <div class="card">
+      <div class="sub-title">🗺️ Mapa de Ubicación</div>
+      <div class="img-grid">
+        <div class="img-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Peru_location_map.svg/600px-Peru_location_map.svg.png"
+               alt="Mapa de ubicación – Departamento San Martín, Perú"
+               onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>🗺️</span><span>Mapa de Ubicación Nacional<br>(Insertar mapa del proyecto)</span></div>'">
+          <p class="img-caption">Fig. 1 – Ubicación del departamento de San Martín en el Perú</p>
+        </div>
+        <div class="img-item">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+               alt="Vista satelital - zona de intervención"
+               onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>🛰️</span><span>Vista satelital sistema existente<br>(Insertar imagen del proyecto)</span></div>'">
+          <p class="img-caption">Fig. 2 – Vista aérea del sistema de agua existente Atahualpa–Alto El Sol–Ricardo Palma</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Población beneficiaria -->
+    <div class="card">
+      <div class="sub-title">👥 Población Beneficiaria</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Localidad</th><th>Población Actual</th><th>N° Viviendas</th></tr></thead>
+          <tbody>
+            <tr><td>Alto El Sol</td><td>744 habitantes</td><td>186</td></tr>
+            <tr><td>Ricardo Palma</td><td>296 habitantes</td><td>77</td></tr>
+            <tr><td>Atahualpa</td><td>310 habitantes</td><td>93</td></tr>
+            <tr><td><strong>TOTAL</strong></td><td><strong>1,350 habitantes</strong></td><td><strong>356</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-caption">Fuente: INEI – Centros Poblados. La cobertura de conexiones domiciliarias existente es del 100%, aunque sin continuidad ni calidad garantizada.</p>
+    </div>
+
+    <!-- Objetivo -->
+    <div class="alert info">
+      <span class="alert-icon">🎯</span>
+      <div>
+        <strong>Objetivo Central del IOARR</strong>
+        "Acceso Universal y Adecuado al Servicio de Agua Potable en el Centro Poblado de Atahualpa".
+        Se plantea una ALTERNATIVA ÚNICA técnicamente justificada que cierra las brechas de cobertura
+        (acceso) y calidad del servicio.
+      </div>
+    </div>
+
+    <!-- Características sociales -->
+    <div class="two-col mt-md">
+      <div class="card">
+        <div class="sub-title">🏘️ Características Sociales</div>
+        <p>La población de Atahualpa pertenece a una comunidad campesina. El <mark>90% vive de la agricultura</mark>: yuca, maíz, plátano, café, frutas y verduras. Se cría también ganado ovino y vacuno.</p>
+        <hr class="sep" style="margin:16px 0;">
+        <div class="sub-title" style="margin-top:0">🏫 Instituciones Educativas</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Localidad</th><th>Nivel</th><th>Alumnos</th></tr></thead>
+            <tbody>
+              <tr><td>Alto El Sol</td><td>Inicial / Primaria / Secundaria</td><td>254</td></tr>
+              <tr><td>Ricardo Palma</td><td>Primaria / Inicial PRONEI</td><td>44</td></tr>
+              <tr><td>Atahualpa</td><td>Inicial / Primaria</td><td>94</td></tr>
+              <tr><td><strong>TOTAL</strong></td><td>7 Instituciones</td><td><strong>392</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <div class="sub-title">🌿 Clima y Suelos</div>
+        <ul class="checklist">
+          <li>Clasificación de suelos: Orden <strong>Ultisol</strong>, suborden <strong>Udults</strong>, gran grupo <strong>Hapludults</strong>, serie <strong>Bellavista Pálido</strong>.</li>
+          <li>Textura fina, horizontes muy compactados, permeabilidad muy lenta.</li>
+          <li>Reacción muy fuertemente ácida, bajo contenido de materia orgánica.</li>
+          <li>Clima <strong>Af</strong> – Selva tropical húmeda: temperatura promedio 21°C–25°C, precipitaciones &gt; 3,000 mm/año.</li>
+          <li>Dos períodos lluviosos: febrero–mayo y setiembre–diciembre.</li>
+          <li>Clasificación según W. Thornthwaite (usada por SENAMHI).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────────────────────────────────────
+       TAB 1 · JINCHUÑA – DESCRIPCIÓN GENERAL & PARÁMETROS
+       ──────────────────────────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-1">
+    <div class="resp-badge">
+      <div class="resp-avatar">JS</div>
+      <div class="resp-info">
+        <div class="resp-name">Jinchuña Salamanca, Ronald</div>
+        <div class="resp-topic">Integrante 1 — Descripción General del Proyecto y Parámetros de Diseño</div>
+        <div class="resp-tags">
+          <span class="resp-tag">Alcance del sistema</span>
+          <span class="resp-tag">Criterios de diseño</span>
+          <span class="resp-tag">Verificación normativa</span>
+          <span class="resp-tag">Modelo 3D – Vista general</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Descripción General del Proyecto y Parámetros de Diseño</h2>
+    <p class="section-lead">
+      Análisis técnico del alcance del sistema de agua potable, sus características generales, criterios de diseño y parámetros base utilizados. Verificación de cumplimiento normativo y modelado 3D de la visión global del proyecto.
+    </p>
+
+    <!-- Descripción del sistema -->
+    <div class="card">
+      <div class="sub-title">🔧 Descripción General del Sistema Existente</div>
+      <p>El sistema de abastecimiento de agua en la localidad Atahualpa funciona por <mark>gravedad con tratamiento</mark>. Fue construido en 2006 por la Municipalidad Distrital de Pachiza, con una antigüedad de 14 años al momento de la intervención. Atiende a tres centros poblados: Alto El Sol, Ricardo Palma y Atahualpa.</p>
+
+      <div class="two-col mt-md">
+        <div>
+          <div class="sub-title" style="margin-top:0">Datos Básicos del Sistema</div>
+          <div class="card" style="padding:16px;">
+            <div class="status-row"><span class="status-label">Tipo de sistema</span><span class="status-badge s-ok">Gravedad con tratamiento</span></div>
+            <div class="status-row"><span class="status-label">Tipo de fuente</span><span class="status-badge s-ok">Superficial (Qda. Pushan)</span></div>
+            <div class="status-row"><span class="status-label">Año de construcción</span><span class="status-badge s-mid">2006 (14 años)</span></div>
+            <div class="status-row"><span class="status-label">Servicio de agua</span><span class="status-badge s-bad">Por horas – No continuo</span></div>
+            <div class="status-row"><span class="status-label">Dotación diseño</span><span class="status-badge s-ok">70 L/hab/día</span></div>
+            <div class="status-row"><span class="status-label">Caudal fuente</span><span class="status-badge s-ok">30 L/s</span></div>
+            <div class="status-row"><span class="status-label">Demanda promedio actual</span><span class="status-badge s-ok">1.42 L/s</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="sub-title" style="margin-top:0">Estado de Componentes</div>
+          <div class="card" style="padding:16px;">
+            <div class="status-row"><span class="status-label">Captación (Barraje fijo)</span><span class="status-badge s-bad">Mal estado</span></div>
+            <div class="status-row"><span class="status-label">Línea de conducción (1950 m)</span><span class="status-badge s-bad">Opera limitado</span></div>
+            <div class="status-row"><span class="status-label">Pase aéreo 40m (principal)</span><span class="status-badge s-bad">Colapsado</span></div>
+            <div class="status-row"><span class="status-label">Sedimentador</span><span class="status-badge s-bad">No opera</span></div>
+            <div class="status-row"><span class="status-label">Filtro Lento</span><span class="status-badge s-bad">No opera</span></div>
+            <div class="status-row"><span class="status-label">Reservorio (30 m³)</span><span class="status-badge s-ok">Buen estado</span></div>
+            <div class="status-row"><span class="status-label">Cerco perimétrico</span><span class="status-badge s-bad">Mal estado</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parámetros de diseño -->
+    <div class="card">
+      <div class="sub-title">📐 Parámetros de Diseño</div>
+      <p>Los parámetros de diseño se basan en la normativa vigente peruana para sistemas de agua potable rural. Se detallan a continuación los criterios adoptados y sus fuentes normativas:</p>
+
+      <div class="table-wrap mt-md">
+        <table>
+          <thead>
+            <tr>
+              <th>Parámetro</th>
+              <th>Valor adoptado</th>
+              <th>Normativa</th>
+              <th>Observación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dotación de agua (zona rural – sierra/selva)</td>
+              <td>70 L/hab/día</td>
+              <td><span class="norm-tag">RM 192-2018-VIVIENDA</span></td>
+              <td>Correcto para zona rural sin alcantarillado</td>
+            </tr>
+            <tr>
+              <td>Caudal promedio diario (Qmd)</td>
+              <td>1.42 L/s</td>
+              <td><span class="norm-tag">DS 031-2010-SA</span></td>
+              <td>Calculado con 1,350 habitantes</td>
+            </tr>
+            <tr>
+              <td>Caudal máximo diario (K1=1.3)</td>
+              <td>1.85 L/s</td>
+              <td><span class="norm-tag">RM 192-2018-VIVIENDA</span></td>
+              <td>Factor de variación diaria</td>
+            </tr>
+            <tr>
+              <td>Caudal máximo horario (K2=2.0)</td>
+              <td>2.84 L/s</td>
+              <td><span class="norm-tag">RM 192-2018-VIVIENDA</span></td>
+              <td>Factor de variación horaria</td>
+            </tr>
+            <tr>
+              <td>Caudal de diseño captación</td>
+              <td>1.85 L/s</td>
+              <td><span class="norm-tag">OS.010 RNE</span></td>
+              <td>Qmd con reserva 20%</td>
+            </tr>
+            <tr>
+              <td>Clase tubería PVC conducción</td>
+              <td>Clase 10 (existente) / F°G° (renovación)</td>
+              <td><span class="norm-tag">OS.010 RNE</span></td>
+              <td>Profundidad entierro 0.60 m</td>
+            </tr>
+            <tr>
+              <td>Velocidad mínima conducción</td>
+              <td>0.60 m/s</td>
+              <td><span class="norm-tag">OS.010 RNE</span></td>
+              <td>Verificar en renovación</td>
+            </tr>
+            <tr>
+              <td>Período de diseño</td>
+              <td>20 años</td>
+              <td><span class="norm-tag">RM 192-2018-VIVIENDA</span></td>
+              <td>Sistema rural nuevo</td>
+            </tr>
+            <tr>
+              <td>Tasa de crecimiento poblacional</td>
+              <td>1.5% (estimado)</td>
+              <td><span class="norm-tag">INEI – Censos</span></td>
+              <td>Verificar con datos INEI actualizados</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-caption">Cuadro 1.1 – Parámetros de diseño del sistema de agua potable. Fuente: RNE, RM 192-2018-VIVIENDA, DS 031-2010-SA.</p>
+    </div>
+
+    <!-- Cálculo demanda -->
+    <div class="card">
+      <div class="sub-title">🧮 Verificación de Cálculos de Demanda</div>
+      <div class="calc-block">
+        <div class="calc-title">📊 Cálculo del Caudal de Diseño</div>
+        <div class="calc-row">
+          <span class="calc-label">Población actual total (2020)</span>
+          <span class="calc-val">1,350 hab</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Dotación (zona rural selva, sin alcant.)</span>
+          <span class="calc-val">70 L/hab/día</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Qmd = Pob × Dot / 86400</span>
+          <span class="calc-val">1,350 × 70 / 86,400 = <span style="color:var(--c-green)">1.094 L/s</span></span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Qmd (con pérdidas sistema ~30%)</span>
+          <span class="calc-val">1.094 × 1.30 ≈ <span style="color:var(--c-gold)">1.42 L/s ✓</span></span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Qmáx diario (K1 = 1.3)</span>
+          <span class="calc-val">1.42 × 1.3 = <span style="color:var(--c-accent)">1.85 L/s</span></span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Qmáx horario (K2 = 2.0)</span>
+          <span class="calc-val">1.42 × 2.0 = <span style="color:var(--c-accent)">2.84 L/s</span></span>
+        </div>
+        <div class="calc-result">
+          <span class="label">Caudal de la fuente disponible (Qda. Pushan)</span>
+          <span class="value">30 L/s ✓ Suficiente</span>
+        </div>
+      </div>
+
+      <div class="alert success mt-md">
+        <span class="alert-icon">✅</span>
+        <div><strong>Verificación aprobada</strong> La demanda de diseño (1.85 L/s) es cubierta ampliamente por la fuente (30 L/s). El caudal de la quebrada Pushan es más de 16 veces la demanda requerida. No se identifica problema de oferta hídrica.</div>
+      </div>
+
+      <div class="alert warning">
+        <span class="alert-icon">⚠️</span>
+        <div><strong>Corrección propuesta</strong> La dotación de 70 L/hab/día debe verificarse con la Norma RM 192-2018-VIVIENDA que puede indicar valores diferenciados según región (selva baja podría requerir 80-100 L/hab/día). Se recomienda recalcular con la tabla actualizada para zonas rurales con temperatura &gt;22°C.</div>
+      </div>
+    </div>
+
+    <!-- Normativa aplicable -->
+    <div class="card">
+      <div class="sub-title">⚖️ Marco Normativo Aplicable</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Norma / Código</th><th>Descripción</th><th>Aplicación</th></tr></thead>
+          <tbody>
+            <tr><td>OS.010 RNE</td><td>Captación y conducción de agua para consumo humano</td><td>Diseño de captación y línea</td></tr>
+            <tr><td>OS.020 RNE</td><td>Plantas de Tratamiento de Agua para Consumo Humano</td><td>Diseño PTAP</td></tr>
+            <tr><td>OS.030 RNE</td><td>Almacenamiento de agua para consumo humano</td><td>Diseño reservorio</td></tr>
+            <tr><td>RM 192-2018-VIVIENDA</td><td>Norma Técnica para sistemas de agua y saneamiento rural</td><td>Parámetros de diseño general</td></tr>
+            <tr><td>DS 031-2010-SA</td><td>Reglamento de Calidad del Agua para Consumo Humano</td><td>Límites máximos permisibles</td></tr>
+            <tr><td>NTP 399.002</td><td>Tuberías de PVC para agua potable</td><td>Especificación tuberías</td></tr>
+            <tr><td>E.030 RNE</td><td>Diseño Sismorresistente</td><td>Diseño estructural</td></tr>
+            <tr><td>E.060 RNE</td><td>Concreto Armado</td><td>Diseño estructuras concreto</td></tr>
+            <tr><td>INVIERTE.PE</td><td>Sistema Nacional de Programación Multianual y Gestión de Inversiones</td><td>Marco de aprobación del IOARR</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Modelo 3D -->
+    <div class="model-box">
+      <div class="model-icon">🏗️</div>
+      <h4>Modelo 3D – Vista General del Sistema (Revit)</h4>
+      <p>Modelado en Autodesk Revit de la vista isométrica general del sistema de agua potable Atahualpa, mostrando todos los componentes interconectados.</p>
+      <div class="model-specs">
+        <span class="model-spec">Software: Autodesk Revit</span>
+        <span class="model-spec">Escala: 1:500</span>
+        <span class="model-spec">Vista: Isométrica 3D</span>
+        <span class="model-spec">Incluye: Captación, conducción, PTAP, reservorio</span>
+      </div>
+      <div class="img-placeholder mt-md" style="min-height:280px;">
+        <span class="ph-icon">📐</span>
+        <span>[ Insertar captura de pantalla del modelo 3D en Revit ]<br>Vista isométrica del sistema completo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────────────────────────────────────
+       TAB 2 · GONZALES – TRABAJOS PRELIMINARES, SST, CAPTACIÓN & CONDUCCIÓN
+       ──────────────────────────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-2">
+    <div class="resp-badge">
+      <div class="resp-avatar">GC</div>
+      <div class="resp-info">
+        <div class="resp-name">Gonzales Chirinos, Royer R.</div>
+        <div class="resp-topic">Integrante 2 — Trabajos Preliminares · SST · Mitigación Ambiental · Captación · Línea de Conducción</div>
+        <div class="resp-tags">
+          <span class="resp-tag">Trabajos preliminares</span>
+          <span class="resp-tag">Seguridad y Salud en el Trabajo</span>
+          <span class="resp-tag">Impacto ambiental</span>
+          <span class="resp-tag">Sistema de captación</span>
+          <span class="resp-tag">Línea de conducción</span>
+          <span class="resp-tag">Modelo 3D – Captación</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Trabajos Preliminares, SST, Mitigación Ambiental, Captación y Línea de Conducción</h2>
+    <p class="section-lead">Análisis técnico de las actividades previas, medidas de seguridad, impacto ambiental, y diseño del sistema de captación de toma lateral y línea de conducción de agua cruda.</p>
+
+    <!-- Trabajos preliminares -->
+    <div class="card">
+      <div class="sub-title">🔨 Trabajos Preliminares</div>
+      <p>Las actividades previas al inicio de la ejecución de obra comprenden todas las acciones de preparación del terreno, instalaciones provisionales y actividades de gestión necesarias para iniciar los trabajos.</p>
+      <ul class="checklist mt-md">
+        <li>Movilización y desmovilización de equipos, herramientas y maquinaria al área de intervención.</li>
+        <li>Instalación del cartel de obra con las especificaciones del proyecto IOARR.</li>
+        <li>Habilitación de almacén provisional y guardianía en sitio.</li>
+        <li>Desvío parcial de la quebrada Pushan para trabajos en la captación.</li>
+        <li>Limpieza de terreno manual en área de captación y PTAP.</li>
+        <li>Trazo, niveles y replanteo para estructuras (uso de nivel topográfico, estación total).</li>
+        <li>Limpieza y preparación de accesos internos (trocha de ingreso a captación ~2 km).</li>
+      </ul>
+      <div class="table-wrap mt-md">
+        <table>
+          <thead><tr><th>Actividad</th><th>Unidad</th><th>Normativa</th></tr></thead>
+          <tbody>
+            <tr><td>Cartel de identificación de obra 3.60 x 2.40m</td><td>Und</td><td><span class="norm-tag">Ley 30225</span></td></tr>
+            <tr><td>Movilización y desmovilización de equipos</td><td>Glb</td><td><span class="norm-tag">RNE</span></td></tr>
+            <tr><td>Trazo, niveles y replanteo</td><td>m²</td><td><span class="norm-tag">OS.010 RNE</span></td></tr>
+            <tr><td>Desvío provisional de quebrada</td><td>Glb</td><td><span class="norm-tag">ANA - Ley 29338</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Seguridad y Salud -->
+    <div class="card">
+      <div class="sub-title">🦺 Seguridad y Salud en el Trabajo (SST)</div>
+      <div class="alert warning">
+        <span class="alert-icon">⚠️</span>
+        <div><strong>Normativa aplicable:</strong> Ley N° 29783 (Ley SST), DS 005-2012-TR (Reglamento), G.050 RNE (Seguridad en Construcción), Norma técnica G.050.</div>
+      </div>
+      <p class="mt-sm">El plan de seguridad debe contemplar los riesgos específicos del trabajo en zona de selva alta, trabajo en quebradas con régimen pluvial intenso y manipulación de materiales pesados.</p>
+      <div class="two-col mt-md">
+        <div>
+          <div class="sub-title" style="margin-top:0;font-size:.95rem;">EPP Requerido</div>
+          <ul class="checklist">
+            <li>Casco de seguridad (ANSI Z89.1)</li>
+            <li>Lentes de protección</li>
+            <li>Protector auditivo</li>
+            <li>Guantes de cuero / nitrilo</li>
+            <li>Calzado de seguridad dieléctrico</li>
+            <li>Chaleco reflectivo</li>
+            <li>Ropa impermeable (zona lluviosa)</li>
+            <li>Arnés para trabajos en altura (pases aéreos)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="sub-title" style="margin-top:0;font-size:.95rem;">Medidas Preventivas</div>
+          <ul class="checklist">
+            <li>Señalización perimetral de obra con cintas de seguridad.</li>
+            <li>Capacitaciones de inducción antes de inicio de trabajos.</li>
+            <li>Botiquín de primeros auxilios en obra.</li>
+            <li>Plan de emergencias y evacuación.</li>
+            <li>Registro de accidentes e incidentes.</li>
+            <li>Vigilancia meteorológica para suspender trabajos en quebranda durante lluvias.</li>
+            <li>Andamios certificados para trabajos en altura en pases aéreos.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Impacto ambiental -->
+    <div class="card">
+      <div class="sub-title">🌿 Mitigación de Impacto Ambiental</div>
+      <div class="alert info">
+        <span class="alert-icon">ℹ️</span>
+        <div><strong>Normativa:</strong> Ley N° 27446 – SEIA, DS 019-2009-MINAM (Reglamento SEIA), Ley 29338 (Recursos Hídricos), DS 023-2009-MINAM.</div>
+      </div>
+      <div class="table-wrap mt-md">
+        <table>
+          <thead><tr><th>Aspecto ambiental</th><th>Impacto identificado</th><th>Medida de mitigación</th></tr></thead>
+          <tbody>
+            <tr><td>Movimiento de tierras</td><td>Erosión de suelos, turbidez del agua</td><td>Barreras de sedimentos, revegetación posterior</td></tr>
+            <tr><td>Desvío temporal de quebrada</td><td>Alteración del cauce y biota acuática</td><td>Mínimo tiempo de desvío, restauración inmediata</td></tr>
+            <tr><td>Demolición del sedimentador</td><td>Generación de residuos de construcción</td><td>Disposición en zona designada, no en quebrada</td></tr>
+            <tr><td>Residuos sólidos de obra</td><td>Contaminación del suelo y quebradas</td><td>Segregación, almacenamiento y disposición final autorizada</td></tr>
+            <tr><td>Ruido por maquinaria</td><td>Afectación fauna silvestre</td><td>Jornadas de 8h máx., silenciadores en equipos</td></tr>
+            <tr><td>Efluentes de concreto</td><td>Contaminación hídrica</td><td>Pozas de sedimentación, no verter al cauce</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Captación -->
+    <div class="card">
+      <div class="sub-title">🌊 Sistema de Captación – Renovación Toma Lateral</div>
+      <div class="two-col">
+        <div>
+          <p><strong class="text-accent">Tipo:</strong> Captación de toma lateral (renovación completa)</p>
+          <p><strong class="text-accent">Fuente:</strong> Quebrada "Pushan" (fuente superficial)</p>
+          <p><strong class="text-accent">Caudal disponible:</strong> 30 L/s (aforo Sep-2020)</p>
+          <p><strong class="text-accent">Caudal de diseño:</strong> 1.85 L/s (Qmáx diario)</p>
+          <div class="mt-sm">
+            <p><strong class="text-accent">Coordenadas de ubicación:</strong></p>
+            <p class="mono">E: 297,965.31 | N: 9,190,910.53 | Alt: 481.30 msnm | Zona 18L</p>
+          </div>
+        </div>
+        <div>
+          <div class="sub-title" style="margin-top:0;font-size:.9rem;">Especificaciones Estructurales</div>
+          <div class="calc-block" style="margin:0;">
+            <div class="calc-row"><span class="calc-label">Concreto muros</span><span class="calc-val">f'c = 210 kg/cm²</span></div>
+            <div class="calc-row"><span class="calc-label">Concreto solado</span><span class="calc-val">f'c = 100 kg/cm²</span></div>
+            <div class="calc-row"><span class="calc-label">Concreto ciclópeo</span><span class="calc-val">f'c = 140 + 30% PM</span></div>
+            <div class="calc-row"><span class="calc-label">Acero refuerzo</span><span class="calc-val">fy = 4200 kg/cm²</span></div>
+            <div class="calc-row"><span class="calc-label">Tarrajeo interior</span><span class="calc-val">1:2 + impermeab. e=2cm</span></div>
+            <div class="calc-row"><span class="calc-label">Escollera</span><span class="calc-val">f'c = 175 kg/cm²</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-grid mt-md">
+        <div class="img-item">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80"
+               alt="Captación lateral – estado actual"
+               onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>🌊</span><span>Img. 1 – Estado actual de la captación<br>(Insertar foto del proyecto)</span></div>'">
+          <p class="img-caption">Fig. 2.1 – Captación afectada por máximas avenidas y movimiento de rocas (Qda. Pushan)</p>
+        </div>
+        <div class="img-placeholder">
+          <span class="ph-icon">📐</span>
+          <span>Fig. 2.2 – Plano de la nueva captación de toma lateral<br>(Insertar plano del expediente)</span>
+        </div>
+      </div>
+
+      <div class="alert danger mt-md">
+        <span class="alert-icon">🔴</span>
+        <div><strong>Deficiencia detectada:</strong> La captación existente tipo barraje fijo no contaba con canal de derivación, lo que impide regular el caudal captado. La renovación debe incluir toma lateral con cámara de recolección, reja de captación y compuerta de control, en cumplimiento de la norma <mark>OS.010 del RNE</mark>.</div>
+      </div>
+    </div>
+
+    <!-- Línea de conducción -->
+    <div class="card">
+      <div class="sub-title">🔩 Línea de Conducción – Renovación y Reparación</div>
+      <p>La línea de conducción tiene una longitud total de <mark>1,950 m</mark> desde la captación hasta la PTAP/Reservorio. Se intervienen los tramos más críticos con renovación de 124 m en tubería F°G° de 3" y renovación/reparación de pases aéreos.</p>
+
+      <div class="table-wrap mt-md">
+        <table>
+          <thead><tr><th>Componente</th><th>Coordenadas Inicio (UTM 18M)</th><th>Longitud</th><th>Material</th><th>Intervención</th></tr></thead>
+          <tbody>
+            <tr><td>Tramo 01 – Tubería F°G° enterrada</td><td>E297981 / N9190903</td><td>15 m</td><td>F°G° 3"</td><td>Renovación</td></tr>
+            <tr><td>Tramo 02 – Tubería F°G° superficie</td><td>–</td><td>74 m</td><td>F°G° 3"</td><td>Renovación + dados concreto</td></tr>
+            <tr><td>Tramo 03 – F°G° enterrado sin dados</td><td>–</td><td>33 m</td><td>F°G° 3"</td><td>Renovación</td></tr>
+            <tr><td>Cruce especial con dados L=8m</td><td>E298027 / N9190903</td><td>8 m</td><td>F°G° DN 3"</td><td>Renovación</td></tr>
+            <tr><td>Pase aéreo 30 m (nuevo)</td><td>E298324 / N9191102</td><td>30 m</td><td>HDPE DN 90mm</td><td>Renovación completa</td></tr>
+            <tr><td>Pase aéreo 35 m (reparación)</td><td>E298228 / N9191049</td><td>35 m</td><td>HDPE DN 90mm</td><td>Reparación</td></tr>
+            <tr><td>Válvulas de purga</td><td>6 puntos distribuidos</td><td>–</td><td>–</td><td>6 und renovadas</td></tr>
+            <tr><td>Válvulas de aire</td><td>6 puntos distribuidos</td><td>–</td><td>–</td><td>6 und renovadas</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Verificación hidráulica -->
+      <div class="calc-block mt-md">
+        <div class="calc-title">🧮 Verificación Hidráulica – Línea de Conducción</div>
+        <div class="calc-row">
+          <span class="calc-label">Caudal de diseño (Qmáx diario)</span>
+          <span class="calc-val">Q = 1.85 L/s = 0.00185 m³/s</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Diámetro interno tubería F°G° 3"</span>
+          <span class="calc-val">D = 77.9 mm = 0.0779 m</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Área transversal (A = π D²/4)</span>
+          <span class="calc-val">A = 0.00477 m²</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Velocidad de flujo (V = Q/A)</span>
+          <span class="calc-val">V = 0.00185 / 0.00477 = <span style="color:var(--c-gold)">0.39 m/s</span></span>
+        </div>
+        <div class="calc-result">
+          <span class="label">Velocidad mínima permitida (OS.010)</span>
+          <span class="value" style="color:var(--c-red)">V_min = 0.60 m/s ⚠ No cumple</span>
+        </div>
+      </div>
+
+      <div class="alert danger mt-md">
+        <span class="alert-icon">🔴</span>
+        <div><strong>Error identificado:</strong> La velocidad calculada (0.39 m/s) es inferior a la velocidad mínima de 0.60 m/s exigida por la norma <mark>OS.010 del RNE</mark> para líneas de conducción. Esto favorece la sedimentación dentro de la tubería.<br><br>
+        <strong>Propuesta de solución:</strong> Reducir el diámetro a 2" (D int = 52.5 mm): V = Q/A = 0.00185/(π×0.0525²/4) = 0.85 m/s ✓. Sin embargo, debe verificarse que la pérdida de carga con diámetro 2" no exceda la diferencia de cotas disponible (473–466.8 = 6.2 m en el tramo renovado). Si la pérdida es excesiva, se debe optimizar el trazado o usar 63mm HDPE.</div>
+      </div>
+
+      <div class="model-box mt-md">
+        <div class="model-icon">🏗️</div>
+        <h4>Modelo 3D – Captación y Línea de Conducción (Revit)</h4>
+        <p>Modelado tridimensional de la captación de toma lateral renovada y los primeros 124 m de línea de conducción con F°G°, pases aéreos y válvulas.</p>
+        <div class="model-specs">
+          <span class="model-spec">Software: Autodesk Revit</span>
+          <span class="model-spec">Escala: 1:200</span>
+          <span class="model-spec">Incluye: Captación + pases aéreos + válvulas</span>
+        </div>
+        <div class="img-placeholder mt-md" style="min-height:240px;">
+          <span class="ph-icon">📐</span>
+          <span>[ Insertar modelo 3D Revit – Captación y Línea de Conducción ]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────────────────────────────────────
+       TAB 3 · ROJAS – SEDIMENTADOR
+       ──────────────────────────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-3">
+    <div class="resp-badge">
+      <div class="resp-avatar">RY</div>
+      <div class="resp-info">
+        <div class="resp-name">Rojas Yana, Jose</div>
+        <div class="resp-topic">Integrante 3 — Planta de Tratamiento – Renovación del Sedimentador</div>
+        <div class="resp-tags">
+          <span class="resp-tag">Proceso de sedimentación</span>
+          <span class="resp-tag">Diseño hidráulico</span>
+          <span class="resp-tag">Verificación normativa</span>
+          <span class="resp-tag">Modelo 3D – Sedimentador</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Planta de Tratamiento – Renovación del Sedimentador</h2>
+    <p class="section-lead">Análisis técnico completo del sedimentador: descripción del proceso, dimensionamiento, verificación normativa y propuesta de corrección de errores de diseño.</p>
+
+    <!-- Descripción -->
+    <div class="card">
+      <div class="sub-title">📋 Descripción Técnica del Sedimentador</div>
+      <div class="two-col">
+        <div>
+          <p>El sedimentador es el primer proceso de tratamiento de agua cruda en la PTAP. Su función es eliminar partículas en suspensión mediante la acción de la gravedad (sedimentación gravitacional) antes de que el agua ingrese al filtro lento.</p>
+          <p class="mt-sm">El sedimentador existente se encuentra <mark>en mal estado estructural y no opera</mark>. La renovación implica demolición total y construcción de una nueva estructura de concreto armado.</p>
+          <div class="mt-sm">
+            <strong class="text-accent">Ubicación:</strong><br>
+            <span class="mono">N: 9,190,930.68 | E: 298,105.14 | Alt: 466.60 msnm | Zona 18L</span>
+          </div>
+        </div>
+        <div>
+          <div class="sub-title" style="margin-top:0;font-size:.9rem;">Especificaciones Estructurales</div>
+          <div class="calc-block" style="margin:0;">
+            <div class="calc-row"><span class="calc-label">Concreto armado muros</span><span class="calc-val">f'c = 210 kg/cm²</span></div>
+            <div class="calc-row"><span class="calc-label">Concreto solado</span><span class="calc-val">f'c = 100 kg/cm²</span></div>
+            <div class="calc-row"><span class="calc-label">Acero de refuerzo</span><span class="calc-val">fy = 4,200 kg/cm²</span></div>
+            <div class="calc-row"><span class="calc-label">Tarrajeo interior</span><span class="calc-val">1:2 + impermeabilizante e=2cm</span></div>
+            <div class="calc-row"><span class="calc-label">Tarrajeo exterior</span><span class="calc-val">1:5 e=1.5cm</span></div>
+            <div class="calc-row"><span class="calc-label">Water stop junta</span><span class="calc-val">Neoprene 6"</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proceso -->
+    <div class="card">
+      <div class="sub-title">⚗️ Proceso de Sedimentación</div>
+      <p>El tipo de sedimentador utilizado en sistemas rurales de pequeña escala es el <strong>sedimentador de flujo horizontal</strong> (tipo convencional). El agua ingresa por un extremo y fluye horizontalmente hacia la salida, permitiendo que las partículas caigan al fondo por gravedad durante el tiempo de retención hidráulico.</p>
+      <ul class="checklist mt-md">
+        <li>Zona de entrada: distribución uniforme del flujo mediante pantalla deflectora.</li>
+        <li>Zona de sedimentación: las partículas con velocidad de caída mayor a la velocidad de arrastre se depositan en el fondo.</li>
+        <li>Zona de lodos: acumulación de sedimentos con vaciado periódico.</li>
+        <li>Zona de salida: vertedero de salida que asegura flujo laminar y recogida del agua clarificada.</li>
+      </ul>
+    </div>
+
+    <!-- Cálculos de diseño -->
+    <div class="card">
+      <div class="sub-title">🧮 Cálculos de Diseño y Verificación</div>
+      <div class="calc-block">
+        <div class="calc-title">📊 Diseño Hidráulico del Sedimentador (Flujo Horizontal)</div>
+        <div class="calc-row">
+          <span class="calc-label">Caudal de diseño (Q)</span>
+          <span class="calc-val">Q = 1.85 L/s = 0.00185 m³/s</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Tiempo de retención hidráulico (TRH)</span>
+          <span class="calc-val">TRH = 2 horas = 7,200 s</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Volumen útil del sedimentador</span>
+          <span class="calc-val">V = Q × TRH = 0.00185 × 7200 = <span style="color:var(--c-gold)">13.32 m³</span></span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Profundidad útil (h)</span>
+          <span class="calc-val">h = 1.50 m (mín. 1.0–2.0 m recomendado)</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Área superficial (A = V/h)</span>
+          <span class="calc-val">A = 13.32 / 1.50 = 8.88 m²</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Relación largo/ancho (L/B = 4:1)</span>
+          <span class="calc-val">B = √(8.88/4) = 1.49 m → adoptar B = 1.50 m</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Longitud (L = 4 × B)</span>
+          <span class="calc-val">L = 4 × 1.50 = <span style="color:var(--c-accent)">6.00 m</span></span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Carga superficial (Cs = Q/A)</span>
+          <span class="calc-val">Cs = 0.00185 / 8.88 = 0.000208 m³/m²·s = 17.99 m³/m²·día</span>
+        </div>
+        <div class="calc-result">
+          <span class="label">Carga superficial admisible (OS.020 RNE)</span>
+          <span class="value">Cs_adm = 10–30 m³/m²·día ✓ Cumple</span>
+        </div>
+      </div>
+
+      <div class="alert success mt-md">
+        <span class="alert-icon">✅</span>
+        <div><strong>Verificación aprobada:</strong> La carga superficial calculada (17.99 m³/m²·día) está dentro del rango aceptable de 10–30 m³/m²·día establecido por la norma <mark>OS.020 del RNE</mark> para sedimentadores convencionales.</div>
+      </div>
+
+      <!-- Verificación velocidad de flujo -->
+      <div class="calc-block mt-md">
+        <div class="calc-title">📊 Verificación Velocidad Horizontal</div>
+        <div class="calc-row">
+          <span class="calc-label">Área transversal del flujo</span>
+          <span class="calc-val">At = B × h = 1.50 × 1.50 = 2.25 m²</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Velocidad horizontal (Vh = Q/At)</span>
+          <span class="calc-val">Vh = 0.00185 / 2.25 = <span style="color:var(--c-gold)">0.00082 m/s = 0.082 cm/s</span></span>
+        </div>
+        <div class="calc-result">
+          <span class="label">Velocidad máxima permitida (OS.020)</span>
+          <span class="value">Vh_max = 0.50 cm/s ✓ Cumple</span>
+        </div>
+      </div>
+
+      <div class="alert warning mt-md">
+        <span class="alert-icon">⚠️</span>
+        <div><strong>Propuesta de corrección:</strong> Se recomienda verificar el diseño estructural de los muros con el RNE E.060 (Concreto Armado). El espesor mínimo de muros para estructuras hidráulicas de este tipo no debe ser inferior a 0.15 m. Adicionalmente, debe incluirse una losa de techo con ventilación para evitar algas y contaminación del agua clarificada, según la norma <mark>OS.020 del RNE</mark>.</div>
+      </div>
+
+      <div class="table-wrap mt-md">
+        <table>
+          <thead><tr><th>Parámetro de diseño</th><th>Valor calculado</th><th>Rango normativo</th><th>Cumple</th></tr></thead>
+          <tbody>
+            <tr><td>Tiempo de retención hidráulico</td><td>2.0 h</td><td>1–4 h (OS.020)</td><td><span class="status-badge s-ok">✓ Sí</span></td></tr>
+            <tr><td>Carga superficial</td><td>17.99 m³/m²/día</td><td>10–30 m³/m²/día</td><td><span class="status-badge s-ok">✓ Sí</span></td></tr>
+            <tr><td>Velocidad horizontal</td><td>0.082 cm/s</td><td>&lt; 0.50 cm/s</td><td><span class="status-badge s-ok">✓ Sí</span></td></tr>
+            <tr><td>Relación L/B</td><td>4.0</td><td>≥ 3.0 (OS.020)</td><td><span class="status-badge s-ok">✓ Sí</span></td></tr>
+            <tr><td>Profundidad útil</td><td>1.50 m</td><td>1.0–2.0 m (OS.020)</td><td><span class="status-badge s-ok">✓ Sí</span></td></tr>
+            <tr><td>Abertura de compuertas</td><td>[Por definir]</td><td>Ver planos</td><td><span class="status-badge s-mid">Pendiente</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Imágenes estado actual -->
+    <div class="card">
+      <div class="sub-title">📷 Registro Fotográfico del Estado Actual</div>
+      <div class="img-grid">
+        <div class="img-item">
+          <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&q=80"
+               alt="Sedimentador en mal estado"
+               onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>📷</span><span>Imagen del sedimentador en mal estado<br>(Insertar foto del proyecto)</span></div>'">
+          <p class="img-caption">Fig. 3.1 – Sedimentador y filtro lento en estado de abandono (PTAP Atahualpa)</p>
+        </div>
+        <div class="img-placeholder">
+          <span class="ph-icon">📐</span>
+          <span>Fig. 3.2 – Plano de planta y cortes del sedimentador renovado<br>(Insertar plano del expediente técnico)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 3D -->
+    <div class="model-box">
+      <div class="model-icon">🏗️</div>
+      <h4>Modelo 3D – Sedimentador Renovado (Revit)</h4>
+      <p>Modelado tridimensional detallado del sedimentador de flujo horizontal renovado, incluyendo estructura de concreto armado, compuertas, árbol de ingreso y salida, sistema de limpieza y escalera de acceso.</p>
+      <div class="model-specs">
+        <span class="model-spec">Software: Autodesk Revit</span>
+        <span class="model-spec">Dimensiones: 6.0 m × 1.5 m × 1.5 m (útil)</span>
+        <span class="model-spec">Material: f'c = 210 kg/cm²</span>
+        <span class="model-spec">Incluye: Compuertas + árbol hidráulico</span>
+      </div>
+      <div class="img-placeholder mt-md" style="min-height:260px;">
+        <span class="ph-icon">📐</span>
+        <span>[ Insertar render 3D del sedimentador renovado – Autodesk Revit ]<br>Vista isométrica + cortes longitudinal y transversal</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────────────────────────────────────
+       TAB 4 · QUISPE – FILTRO LENTO
+       ──────────────────────────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-4">
+    <div class="resp-badge">
+      <div class="resp-avatar">QZ</div>
+      <div class="resp-info">
+        <div class="resp-name">Quispe Zarate, Samuel L.</div>
+        <div class="resp-topic">Integrante 4 — Planta de Tratamiento – Renovación del Filtro Lento</div>
+        <div class="resp-tags">
+          <span class="resp-tag">Filtración lenta</span>
+          <span class="resp-tag">Medios filtrantes</span>
+          <span class="resp-tag">Cálculo hidráulico</span>
+          <span class="resp-tag">Modelo 3D – Filtro Lento</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Planta de Tratamiento – Renovación del Filtro Lento</h2>
+    <p class="section-lead">Análisis técnico del filtro lento: principio de funcionamiento, cálculo hidráulico y estructural, verificación normativa y propuesta de corrección ante deficiencias detectadas.</p>
+
+    <!-- Descripción -->
+    <div class="card">
+      <div class="sub-title">📋 Descripción y Principio de Funcionamiento</div>
+      <div class="two-col">
+        <div>
+          <p>El <strong>filtro lento de arena</strong> es el proceso de tratamiento principal para remover la turbiedad residual, coliformes y otros microorganismos del agua proveniente del sedimentador. Opera por mecanismos físicos, químicos y biológicos (capa biológica: <em>schmutzdecke</em>).</p>
+          <p class="mt-sm">Es el sistema más apropiado para agua de baja turbiedad en zonas rurales sin operadores calificados, por su bajo costo de operación y mantenimiento.</p>
+          <div class="mt-sm">
+            <strong class="text-accent">Ubicación PTAP:</strong><br>
+            <span class="mono">N: 9,190,940.82 | E: 298,121.06 | Alt: 464.40 msnm</span>
+          </div>
+        </div>
+        <div>
+          <div class="sub-title" style="margin-top:0;font-size:.9rem;">Medios Filtrantes (según expediente)</div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Capa</th><th>Material</th><th>Espesor</th></tr></thead>
+              <tbody>
+                <tr><td>Capa superior</td><td>Arena cuarzosa D.E.=0.15–0.40mm, CU=1.5–3.0</td><td>0.80 m</td></tr>
+                <tr><td>Soporte 1</td><td>Grava seleccionada 1.5–4.0 mm</td><td>0.05 m</td></tr>
+                <tr><td>Soporte 2</td><td>Grava seleccionada 4–15 mm</td><td>0.10 m</td></tr>
+                <tr><td>Soporte 3</td><td>Grava seleccionada 10–40 mm</td><td>0.15 m</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cálculos hidráulicos -->
+    <div class="card">
+      <div class="sub-title">🧮 Cálculos Hidráulicos del Filtro Lento</div>
+      <div class="calc-block">
+        <div class="calc-title">📊 Diseño del Filtro Lento de Arena</div>
+        <div class="calc-row">
+          <span class="calc-label">Caudal de diseño (Q)</span>
+          <span class="calc-val">Q = 1.85 L/s = 6.66 m³/h</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Tasa de filtración (Tf) adoptada</span>
+          <span class="calc-val">Tf = 0.10–0.30 m³/m²·h → adoptar 0.20 m³/m²·h</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Área total de filtración (A = Q/Tf)</span>
+          <span class="calc-val">A = 6.66 / 0.20 = <span style="color:var(--c-gold)">33.3 m²</span></span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Número de unidades (mínimo 2 para continuidad)</span>
+          <span class="calc-val">N = 2 unidades</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Área por unidad</span>
+          <span class="calc-val">A_u = 33.3 / 2 = 16.65 m² → adoptar 17 m²</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Dimensiones (L × B, relación ≤ 1.5:1)</span>
+          <span class="calc-val">L = 5.0 m, B = 3.4 m → A = 17 m² ✓</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Altura del medio filtrante total</span>
+          <span class="calc-val">h_f = 0.80 + 0.05 + 0.10 + 0.15 = 1.10 m</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Lámina de agua sobre arena</span>
+          <span class="calc-val">h_agua = 0.50–1.00 m → adoptar 0.80 m</span>
+        </div>
+        <div class="calc-result">
+          <span class="label">Profundidad útil total del filtro</span>
+          <span class="value">H_total = 1.10 + 0.80 = 1.90 m</span>
+        </div>
+      </div>
+
+      <div class="alert success mt-md">
+        <span class="alert-icon">✅</span>
+        <div><strong>Verificación aprobada:</strong> La tasa de filtración adoptada (0.20 m³/m²·h) está dentro del rango recomendado por la norma <mark>OS.020 del RNE</mark> de 0.10–0.30 m³/m²·h para filtros lentos en zonas rurales.</div>
+      </div>
+
+      <!-- Verificación normativa tabla -->
+      <div class="table-wrap mt-md">
+        <table>
+          <thead><tr><th>Parámetro</th><th>Valor calculado</th><th>Rango normativo (OS.020)</th><th>Estado</th></tr></thead>
+          <tbody>
+            <tr><td>Tasa de filtración</td><td>0.20 m³/m²·h</td><td>0.10–0.30 m³/m²·h</td><td><span class="status-badge s-ok">✓ Cumple</span></td></tr>
+            <tr><td>Profundidad arena</td><td>0.80 m</td><td>0.70–1.00 m</td><td><span class="status-badge s-ok">✓ Cumple</span></td></tr>
+            <tr><td>D.E. de arena (diám. efectivo)</td><td>0.15–0.40 mm</td><td>0.15–0.35 mm</td><td><span class="status-badge s-mid">⚠ Revisar</span></td></tr>
+            <tr><td>Coeficiente de uniformidad (CU)</td><td>1.5–3.0</td><td>≤ 3.0</td><td><span class="status-badge s-ok">✓ Cumple</span></td></tr>
+            <tr><td>Capa soporte (grava)</td><td>0.30 m (total)</td><td>0.20–0.40 m</td><td><span class="status-badge s-ok">✓ Cumple</span></td></tr>
+            <tr><td>Lámina de agua sobre arena</td><td>0.80 m</td><td>0.50–1.00 m</td><td><span class="status-badge s-ok">✓ Cumple</span></td></tr>
+            <tr><td>Número de unidades</td><td>2</td><td>≥ 2 (para continuidad)</td><td><span class="status-badge s-ok">✓ Cumple</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert warning mt-md">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong>Corrección propuesta – Diámetro efectivo de arena:</strong><br>
+          El expediente indica D.E. hasta 0.40 mm, mientras la norma <mark>OS.020 RNE</mark> recomienda máximo 0.35 mm para filtros lentos. Se recomienda especificar arena cuarzosa con D.E. = 0.15–0.30 mm y CU ≤ 2.0 para garantizar la efectividad biológica del <em>schmutzdecke</em> y la calidad del agua filtrada.
+        </div>
+      </div>
+    </div>
+
+    <!-- Registros fotográficos -->
+    <div class="card">
+      <div class="sub-title">📷 Registro Fotográfico y Planos</div>
+      <div class="img-grid">
+        <div class="img-item">
+          <img src="https://images.unsplash.com/photo-1584271854089-9bb3e5168e36?w=500&q=80"
+               alt="Filtro lento en mal estado"
+               onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>🏗️</span><span>Img – Filtro lento en estado de abandono<br>(Insertar foto del proyecto)</span></div>'">
+          <p class="img-caption">Fig. 4.1 – Estado actual del filtro lento (estructura colapsada, sin operación)</p>
+        </div>
+        <div class="img-placeholder">
+          <span class="ph-icon">📐</span>
+          <span>Fig. 4.2 – Plano de planta, corte longitudinal y transversal del filtro lento renovado<br>(Insertar plano del expediente)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 3D -->
+    <div class="model-box">
+      <div class="model-icon">🏗️</div>
+      <h4>Modelo 3D – Filtro Lento Renovado (Revit)</h4>
+      <p>Modelado tridimensional del filtro lento de arena con sus medios filtrantes, sistema de drenaje inferior, árbol de ingreso/salida/limpieza y cerco perimétrico de la PTAP.</p>
+      <div class="model-specs">
+        <span class="model-spec">Software: Autodesk Revit</span>
+        <span class="model-spec">Dimensiones: 5.0 m × 3.4 m × 1.90 m (c/u)</span>
+        <span class="model-spec">Unidades: 2 paralelas</span>
+        <span class="model-spec">Incluye: medios filtrantes + drenaje</span>
+      </div>
+      <div class="img-placeholder mt-md" style="min-height:260px;">
+        <span class="ph-icon">📐</span>
+        <span>[ Insertar render 3D del filtro lento renovado – Autodesk Revit ]<br>Vista explosionada de capas filtrantes + estructura</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────────────────────────────────────
+       TAB 5 · ZAGA – RESERVORIO, CLORACIÓN Y CERCO
+       ──────────────────────────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-5">
+    <div class="resp-badge">
+      <div class="resp-avatar">ZQ</div>
+      <div class="resp-info">
+        <div class="resp-name">Zaga Quispe, Luis Angel</div>
+        <div class="resp-topic">Integrante 5 — Almacenamiento, Cloración, Cerco Perimétrico y Reservorio V=40m³</div>
+        <div class="resp-tags">
+          <span class="resp-tag">Reservorio 40 m³</span>
+          <span class="resp-tag">Sistema de cloración</span>
+          <span class="resp-tag">Cerco perimétrico</span>
+          <span class="resp-tag">Modelo 3D – Reservorio</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Almacenamiento, Cloración y Cerco Perimétrico</h2>
+    <p class="section-lead">Análisis del sistema de almacenamiento (reservorio V=40m³), proceso de cloración por goteo y cerco perimétrico. Verificación de cálculos de capacidad, diseño estructural y sanitario.</p>
+
+    <!-- Reservorio -->
+    <div class="card">
+      <div class="sub-title">🏛️ Reservorio de Almacenamiento</div>
+      <div class="alert info">
+        <span class="alert-icon">ℹ️</span>
+        <div>El reservorio existente tiene una capacidad de <strong>30 m³</strong>. Tras los cálculos del proyecto, se determina que la capacidad requerida es de <strong>40 m³</strong>, por lo que la intervención consiste en la renovación del cerco perimétrico del reservorio (el cuerpo del reservorio existente se mantiene funcional y se considera la ampliación de capacidad como meta futura).</div>
+      </div>
+
+      <div class="two-col mt-md">
+        <div>
+          <div class="sub-title" style="margin-top:0;font-size:.9rem;">Datos del Reservorio Existente</div>
+          <div class="card" style="padding:16px;">
+            <div class="status-row"><span class="status-label">Volumen</span><span>30 m³</span></div>
+            <div class="status-row"><span class="status-label">Forma</span><span>Circular</span></div>
+            <div class="status-row"><span class="status-label">Diámetro útil</span><span>4.00 m</span></div>
+            <div class="status-row"><span class="status-label">Altura útil</span><span>2.35 m</span></div>
+            <div class="status-row"><span class="status-label">Ubicación</span><span>A 50 m de la localidad</span></div>
+            <div class="status-row"><span class="status-label">Altitud</span><span>358 msnm</span></div>
+            <div class="status-row"><span class="status-label">Estado estructural</span><span class="status-badge s-ok">Buen estado</span></div>
+            <div class="status-row"><span class="status-label">Operatividad</span><span class="status-badge s-ok">Operando</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="sub-title" style="margin-top:0;font-size:.9rem;">Coordenadas UTM</div>
+          <div class="calc-block" style="margin:0;">
+            <div class="calc-row"><span class="calc-label">Norte</span><span class="calc-val">9,191,586.56</span></div>
+            <div class="calc-row"><span class="calc-label">Este</span><span class="calc-val">299,284.07</span></div>
+            <div class="calc-row"><span class="calc-label">Altitud</span><span class="calc-val">358.00 msnm</span></div>
+            <div class="calc-row"><span class="calc-label">Zona</span><span class="calc-val">18L</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cálculo de capacidad -->
+    <div class="card">
+      <div class="sub-title">🧮 Verificación del Volumen de Almacenamiento</div>
+      <div class="calc-block">
+        <div class="calc-title">📊 Cálculo de la Capacidad del Reservorio</div>
+        <div class="calc-row">
+          <span class="calc-label">Volumen de regulación (25% del Qprom diario)</span>
+          <span class="calc-val">Vreg = 0.25 × Q_prom_día</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Q_prom diario (1.42 L/s × 86400 s)</span>
+          <span class="calc-val">Vol_día = 1.42 × 86400 = 122,688 L/día = 122.69 m³/día</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Volumen de regulación (25%)</span>
+          <span class="calc-val">Vreg = 0.25 × 122.69 = <span style="color:var(--c-gold)">30.67 m³</span></span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Volumen contra incendios (zona rural, no aplica)</span>
+          <span class="calc-val">Vi = 0 m³ (población &lt; 10,000 hab)</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Volumen de emergencia (recomendado 15%–25%)</span>
+          <span class="calc-val">Ve = 0.15 × 122.69 = 18.40 m³</span>
+        </div>
+        <div class="calc-result">
+          <span class="label">Volumen total requerido (Vreg + Ve)</span>
+          <span class="value">V_total = 30.67 + 18.40 ≈ 49 m³</span>
+        </div>
+      </div>
+
+      <div class="alert danger mt-md">
+        <span class="alert-icon">🔴</span>
+        <div>
+          <strong>Error detectado en el diseño:</strong> El reservorio existente de 30 m³ resulta <strong>insuficiente</strong> según los cálculos actualizados. El volumen de regulación solo (30.67 m³) ya supera la capacidad existente. El proyecto indica un reservorio de V=40 m³ como meta, lo cual se acerca al mínimo requerido de regulación.<br><br>
+          <strong>Propuesta de corrección:</strong> Construir un nuevo reservorio de <mark>50 m³</mark> de capacidad (redondeo al siguiente estándar constructivo superior), que cubra el volumen de regulación + emergencia. De mantenerse el de 40 m³, debe justificarse que el sistema opera de forma continua 24h, reduciendo la necesidad de almacenamiento según la norma <mark>OS.030 del RNE</mark>.
+        </div>
+      </div>
+
+      <!-- Verificación geométrica -->
+      <div class="calc-block mt-md">
+        <div class="calc-title">📊 Verificación Geométrica del Reservorio V=40m³ (Circular)</div>
+        <div class="calc-row">
+          <span class="calc-label">Volumen requerido</span>
+          <span class="calc-val">V = 40 m³</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Altura útil adoptada</span>
+          <span class="calc-val">h = 2.50 m</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Área de la base (A = V/h)</span>
+          <span class="calc-val">A = 40 / 2.50 = 16.0 m²</span>
+        </div>
+        <div class="calc-row">
+          <span class="calc-label">Diámetro interno (D = √(4A/π))</span>
+          <span class="calc-val">D = √(4×16/π) = <span style="color:var(--c-accent)">4.51 m → adoptar D = 4.50 m</span></span>
+        </div>
+        <div class="calc-result">
+          <span class="label">Volumen efectivo (V = π/4 × D² × h)</span>
+          <span class="value">V = π/4 × 4.5² × 2.5 = 39.76 m³ ≈ 40 m³ ✓</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cloración -->
+    <div class="card">
+      <div class="sub-title">🧪 Sistema de Cloración</div>
+      <p>El sistema de cloración instalado en el reservorio es del tipo <strong>goteo con flotador</strong> (hipoclorador de difusión), apropiado para sistemas rurales de pequeña escala por su simplicidad de operación y bajo costo.</p>
+
+      <div class="two-col mt-md">
+        <div>
+          <div class="sub-title" style="margin-top:0;font-size:.9rem;">Parámetros de Cloración</div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Parámetro</th><th>Valor</th><th>Normativa</th></tr></thead>
+              <tbody>
+                <tr><td>Dosis de cloro residual (zona rural)</td><td>0.5 mg/L mínimo</td><td><span class="norm-tag">DS 031-2010-SA</span></td></tr>
+                <tr><td>Dosis máxima cloro residual</td><td>3.0 mg/L</td><td><span class="norm-tag">DS 031-2010-SA</span></td></tr>
+                <tr><td>Tiempo de contacto mínimo (CT)</td><td>30 minutos</td><td><span class="norm-tag">OS.020 RNE</span></td></tr>
+                <tr><td>pH para cloración efectiva</td><td>6.5 – 8.5</td><td><span class="norm-tag">DS 031-2010-SA</span></td></tr>
+                <tr><td>Concentración hipoclorito calcio</td><td>65–70%</td><td>Uso común rural</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <div class="sub-title" style="margin-top:0;font-size:.9rem;">Cálculo de Dosis de Cloro</div>
+          <div class="calc-block" style="margin:0;">
+            <div class="calc-row"><span class="calc-label">Caudal promedio (Q)</span><span class="calc-val">1.42 L/s</span></div>
+            <div class="calc-row"><span class="calc-label">Dosis requerida (D)</span><span class="calc-val">2.0 mg/L</span></div>
+            <div class="calc-row"><span class="calc-label">Consumo cloro puro</span><span class="calc-val">Q×D = 1.42×2.0 = 2.84 mg/s</span></div>
+            <div class="calc-row"><span class="calc-label">Consumo diario cloro puro</span><span class="calc-val">2.84 × 86400 = 245,376 mg ≈ 245 g/día</span></div>
+            <div class="calc-row"><span class="calc-label">Hipoclorito calcio 70%</span><span class="calc-val">245 / 0.70 = 350 g/día</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cerco perimétrico -->
+    <div class="card">
+      <div class="sub-title">🔒 Cerco Perimétrico del Reservorio</div>
+      <p>La intervención incluye la renovación completa del cerco perimétrico del reservorio que se encuentra <mark>en mal estado producto de las lluvias</mark>.</p>
+      <div class="table-wrap mt-md">
+        <table>
+          <thead><tr><th>Elemento</th><th>Especificación</th><th>Norma</th></tr></thead>
+          <tbody>
+            <tr><td>Columnas de tubo F°G°</td><td>2" × 2.5 mm de espesor</td><td><span class="norm-tag">OS.030 RNE</span></td></tr>
+            <tr><td>Malla metálica</td><td>N° 10, cocadas 2"×2"</td><td>–</td></tr>
+            <tr><td>Alambre de púas</td><td>3 hileras superiores</td><td>–</td></tr>
+            <tr><td>Puerta metálica</td><td>1.00×1.95m, tubo 2", malla rombo 2"×2" N°10</td><td>–</td></tr>
+            <tr><td>Dados de concreto (columnas)</td><td>f'c = 175 kg/cm²</td><td><span class="norm-tag">E.060 RNE</span></td></tr>
+            <tr><td>Pintura</td><td>Anticorrosiva + esmalte</td><td>–</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="img-grid mt-md">
+        <div class="img-item">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&q=80"
+               alt="Reservorio existente"
+               onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span class=\'ph-icon\'>🏛️</span><span>Foto del reservorio 30m³<br>(Insertar foto del proyecto)</span></div>'">
+          <p class="img-caption">Fig. 5.1 – Reservorio circular 30 m³ existente (JASS Atahualpa)</p>
+        </div>
+        <div class="img-placeholder">
+          <span class="ph-icon">📐</span>
+          <span>Fig. 5.2 – Plano del reservorio V=40m³ + cerco perimétrico + sistema de cloración<br>(Insertar plano del expediente)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo 3D -->
+    <div class="model-box">
+      <div class="model-icon">🏗️</div>
+      <h4>Modelo 3D – Reservorio, Cloración y Cerco Perimétrico (Revit)</h4>
+      <p>Modelado tridimensional del reservorio circular V=40m³ con su sistema de cloración por goteo, accesorios hidráulicos (ingreso, salida, rebose, limpieza) y cerco perimétrico completo.</p>
+      <div class="model-specs">
+        <span class="model-spec">Software: Autodesk Revit</span>
+        <span class="model-spec">Reservorio: Ø4.5m × H2.5m</span>
+        <span class="model-spec">Incluye: clorador + cerco + accesorios</span>
+        <span class="model-spec">f'c = 210 kg/cm²</span>
+      </div>
+      <div class="img-placeholder mt-md" style="min-height:260px;">
+        <span class="ph-icon">📐</span>
+        <span>[ Insertar render 3D del reservorio con sistema de cloración – Autodesk Revit ]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────────────────────────────────────
+       TAB 6 · PRESUPUESTO Y METAS
+       ──────────────────────────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-6">
+    <h2 class="section-title">Presupuesto, Metas Físicas y Modalidad de Ejecución</h2>
+    <p class="section-lead">Resumen del presupuesto de obra, metas físicas del IOARR, modalidad de contratación, plazo de ejecución y financiamiento.</p>
+
+    <!-- Metas físicas -->
+    <div class="card">
+      <div class="sub-title">📋 Metas Físicas del Proyecto</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Ítem</th><th>Descripción</th><th>Und.</th><th>Cantidad</th></tr></thead>
+          <tbody>
+            <tr><td>01</td><td colspan="3"><strong>SISTEMA DE AGUA POTABLE</strong></td></tr>
+            <tr><td>01.01</td><td>Trabajos Preliminares, SST y Mitigación de Impacto Ambiental</td><td>Glb</td><td>1.00</td></tr>
+            <tr><td>01.02</td><td><strong>CAPTACIÓN DE TOMA LATERAL</strong></td><td>–</td><td>–</td></tr>
+            <tr><td>01.02.01</td><td>Renovación de la captación de toma lateral</td><td>Und</td><td>1.00</td></tr>
+            <tr><td>01.03</td><td><strong>LÍNEA DE CONDUCCIÓN</strong></td><td>–</td><td>–</td></tr>
+            <tr><td>01.03.01</td><td>Renovación de línea de conducción (L=124.00 m) de F°G°</td><td>M</td><td>124.00</td></tr>
+            <tr><td>01.03.02</td><td>Cruce especial con dados L=8 m</td><td>M</td><td>8.00</td></tr>
+            <tr><td>01.03.03</td><td>Renovación pase aéreo L=30m</td><td>M</td><td>30.00</td></tr>
+            <tr><td>01.03.04</td><td>Reparación pase aéreo L=35m</td><td>M</td><td>35.00</td></tr>
+            <tr><td>01.03.05</td><td>Válvula de purga</td><td>Und</td><td>6.00</td></tr>
+            <tr><td>01.03.06</td><td>Válvula de aire</td><td>Und</td><td>6.00</td></tr>
+            <tr><td>01.04</td><td><strong>PLANTA DE TRATAMIENTO</strong></td><td>–</td><td>–</td></tr>
+            <tr><td>01.04.01</td><td>Renovación Sedimentador</td><td>Und</td><td>1.00</td></tr>
+            <tr><td>01.04.02</td><td>Renovación Filtro Lento</td><td>Und</td><td>1.00</td></tr>
+            <tr><td>01.04.03</td><td>Renovación Cerco Perimétrico para PTAP</td><td>Und</td><td>1.00</td></tr>
+            <tr><td>01.05</td><td><strong>ALMACENAMIENTO Y CLORACIÓN</strong></td><td>–</td><td>–</td></tr>
+            <tr><td>01.05.02</td><td>Renovación Cerco Perimétrico Reservorio V=40 m³</td><td>Und</td><td>1.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Presupuesto -->
+    <div class="card">
+      <div class="sub-title">💰 Resumen Presupuestal de la Inversión</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Ítem</th><th>Descripción</th><th>Sub Total (S/.)</th></tr></thead>
+          <tbody>
+            <tr><td>1.00</td><td>1 Und. Captación tipo Ladera (45.15 m²)</td><td>S/. 66,910.27</td></tr>
+            <tr><td>2.00</td><td>1 Und. PTAP – Sedimentador y Filtro Lento (148.68 m)</td><td>S/. 548,247.47</td></tr>
+            <tr><td>3.00</td><td>124 m. Línea de Conducción</td><td>S/. 76,210.35</td></tr>
+            <tr><td>4.00</td><td>1 Und. Reservorio (40 m³)</td><td>S/. 15,502.56</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap mt-sm">
+        <table>
+          <tbody>
+            <tr><td>Costo Directo</td><td><strong>S/. 706,870.65</strong></td></tr>
+            <tr><td>Gastos Generales (14.34%)</td><td>S/. 101,339.11</td></tr>
+            <tr><td>Utilidad (8%)</td><td>S/. 56,549.65</td></tr>
+            <tr><td>Sub Total</td><td>S/. 864,759.41</td></tr>
+            <tr><td>IGV (18%)</td><td>S/. 155,656.69</td></tr>
+            <tr><td>Presupuesto Total de Obra</td><td><strong>S/. 1,020,416.10</strong></td></tr>
+            <tr><td>Supervisión (5.87%)</td><td>S/. 59,888.05</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="budget-total mt-md">
+        <span class="label">TOTAL DE INVERSIÓN</span>
+        <span class="amount">S/. 1,080,304.15</span>
+      </div>
+    </div>
+
+    <!-- Ficha técnica ejecución -->
+    <div class="card-grid mt-md">
+      <div class="info-card">
+        <h4>⚙️ Modalidad de Ejecución</h4>
+        <p>Administración Indirecta (Contratación con tercero privado). Sistema de contratación a <strong>precios unitarios</strong> según Ley N° 30225.</p>
+      </div>
+      <div class="info-card" style="border-top-color:var(--c-gold);">
+        <h4>📅 Plazo de Ejecución</h4>
+        <p><strong>90 días calendario</strong> (3 meses). Inicio programado según cronograma de ejecución del expediente técnico aprobado.</p>
+      </div>
+      <div class="info-card" style="border-top-color:var(--c-green);">
+        <h4>💵 Financiamiento</h4>
+        <p>Recursos Ordinarios del <strong>Gobierno Regional de San Martín</strong>. Bajo el marco del Sistema INVIERTE.PE.</p>
+      </div>
+      <div class="info-card" style="border-top-color:var(--c-red);">
+        <h4>🏢 Entidad Ejecutora</h4>
+        <p>Gerencia Territorial Huallaga Central – Juanjuí (Gobierno Regional San Martín). Sub Gerencia de Infraestructura.</p>
+      </div>
+    </div>
+
+    <!-- Administración del sistema -->
+    <div class="card">
+      <div class="sub-title">🏘️ Administración, Operación y Mantenimiento Post-Obra</div>
+      <p>La operación y mantenimiento del sistema será responsabilidad de la <strong>Junta Administradora de los Servicios de Agua y Saneamiento (JASS – ATAHUALPA)</strong>, organización comunal integrada que administra el sistema de las tres localidades.</p>
+      <ul class="checklist mt-md">
+        <li>Cuota familiar mensual para sostenibilidad del servicio.</li>
+        <li>Capacitación de operadores en limpieza y mantenimiento de filtro lento y sedimentador.</li>
+        <li>Control de cloro residual en puntos de la red (mínimo quincenal).</li>
+        <li>Inspección periódica de captación, línea de conducción y pases aéreos.</li>
+        <li>Registro de consumo y seguimiento de caudales.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════════════════════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <p>
+    <strong>Trabajo Final – I Unidad: PTAP</strong> &nbsp;|&nbsp;
+    CIV326 – Plantas de Tratamiento de Aguas &nbsp;|&nbsp;
+    Ingeniería Civil – <strong>Universidad Nacional del Altiplano</strong>
+  </p>
+  <p class="mt-sm">
+    Entrega: <strong>24 de mayo del 2026, 11:59 PM</strong> &nbsp;|&nbsp;
+    Formato: PDF + Editable &nbsp;|&nbsp;
+    Referencia: IOARR CUI <strong>2498923</strong> – Localidad Atahualpa, San Martín
+  </p>
+  <p class="mt-sm">Integrantes: Jinchuña R. · Gonzales R. · Rojas J. · Quispe S. · Zaga L.</p>
+</footer>
+
+<!-- ══════════════════════════════════════════════════════════════
+     JAVASCRIPT – MANEJO DE TABS
+     ══════════════════════════════════════════════════════════════ -->
+<script>
+  function switchTab(tabId, btn) {
+    // Hide all panels
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    // Deactivate all nav buttons
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    // Show target panel
+    document.getElementById(tabId).classList.add('active');
+    // Activate button
+    btn.classList.add('active');
+    // Scroll to top of main content
+    document.querySelector('.site-main').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+</script>
+
+</body>
+</html>
